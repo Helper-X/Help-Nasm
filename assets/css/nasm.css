@@ -1,0 +1,123 @@
+/* ══════════════════════════════════════════════════════════
+   ПОДСВЕТКА СИНТАКСИСА: NASM x64  — только тёмная тема
+   Цвета приближены к VS Code (Dark+) для NASM/ASM
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Инструкции ── */
+/* mov, add, sub, push, pop, lea, call, ret, xor, and, or, not,
+   neg, inc, dec, shl, shr, sar, sal, adc, sbb, mul, imul, div,
+   idiv, movsx, movzx, cbw, cwd, cdq, cqo, cmp, test, xlat,
+   rep, repe, repne, movsb, movsw, movsd, movsq,
+   stosb, stosw, stosd, stosq, scasb, lodsb ... */
+.token-nasm-instruction {
+    color: #569cd6;
+}
+
+/* ── Условные переходы ── */
+/* je, jne, jz, jnz, jl, jg, jle, jge, jb, ja, jbe, jae,
+   js, jns, jo, jno, jc, jnc, jmp, jrcxz, loope, loopne */
+.token-nasm-jump {
+    color: #d8a0df;
+}
+
+/* ── Инструкция loop ── */
+.token-nasm-loop {
+    color: #d8a0df;
+}
+
+/* ── Syscall (выделяем особо) ── */
+.token-nasm-syscall {
+    color: #f0883e;
+    font-weight: bold;
+}
+
+/* ── Регистры ── */
+/* rax rbx rcx rdx rsi rdi rsp rbp r8..r15
+   eax ebx ecx edx esi edi esp ebp r8d..r15d
+   ax  bx  cx  dx  si  di  sp  bp
+   al  ah  bl  bh  cl  ch  dl  dh
+   r8b r9b r8w r9w ... */
+.token-nasm-register {
+    color: #9cdcfe;
+}
+
+/* ── Директивы данных ── */
+/* db dw dd dq dt, resb resw resd resq, equ, times,
+   global extern align incbin */
+.token-nasm-directive {
+    color: #c586c0;
+}
+
+/* ── Названия секций ── */
+/* .data .bss .text .rodata .const */
+.token-nasm-section {
+    color: #4ec9b0;
+}
+
+/* ── Метки (при определении — "label:") ── */
+/* _start: my_func: loop_end: .loop: */
+.token-nasm-label {
+    color: #dcdcaa;
+}
+
+/* ── Комментарии ── */
+/* ; всё до конца строки */
+.token-nasm-comment {
+    color: #57a64a;
+    font-style: italic;
+}
+
+/* ── Числовые литералы ── */
+/* 42  0FFh  0xFF  11001100b  0o377  1_000 */
+.token-nasm-number {
+    color: #b5cea8;
+}
+
+/* ── Строковые / символьные литералы ── */
+/* "Hello", 'H', `backtick` */
+.token-nasm-string {
+    color: #d69d85;
+}
+
+/* ── Квалификаторы размера ── */
+/* byte word dword qword tword oword yword zword */
+.token-nasm-size {
+    color: #4ec9b0;
+}
+
+/* ── Макро-директивы ── */
+/* %macro %endmacro %define %undef %include %if %else %endif
+   %ifdef %ifndef %assign %rep %endrep */
+.token-nasm-macro {
+    color: #c586c0;
+    font-style: italic;
+}
+
+/* ── Операторы ── */
+/* + - * / << >> & | ^ ~ */
+.token-nasm-operator {
+    color: #dcdcdc;
+}
+
+/* ── Пунктуация ── */
+/* , : ; */
+.token-nasm-punctuation {
+    color: #808080;
+}
+
+/* ── Скобки памяти [  ] ── */
+/* подсвечиваем отдельно чтобы выделить разыменование */
+.token-nasm-bracket {
+    color: #ffd700;
+}
+
+/* ── $ и $$ (текущий / начало секции) ── */
+.token-nasm-dollar {
+    color: #d7ba7d;
+}
+
+/* ── Специальные ключевые слова ── */
+/* near far short strict nosplit */
+.token-nasm-keyword {
+    color: #569cd6;
+}
