@@ -455,33 +455,3 @@ footer {
         gap: 6px;
     }
 }
-/* ===== АБСОЛЮТНОЕ ПРИНУЖДЕНИЕ МОНОШИРИННОСТИ ===== */
-pre,
-code,
-.code pre,
-.code pre code,
-.code,
-pre code,
-.code-header + pre,
-.code-header + pre code {
-    font-family: 'JetBrains Mono', 'Courier New', monospace !important;
-    font-size: 14px !important;
-    line-height: 1.4 !important;
-    letter-spacing: 0 !important;
-    word-spacing: 0 !important;
-    font-kerning: none !important;
-    -webkit-font-kerning: none !important;
-    -webkit-text-size-adjust: 100% !important;
-    -moz-text-size-adjust: 100% !important;
-    -ms-text-size-adjust: 100% !important;
-    text-size-adjust: 100% !important;
-    white-space: pre !important;
-    word-break: keep-all !important;
-    overflow-wrap: normal !important;
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    text-rendering: optimizeSpeed !important;
-}
