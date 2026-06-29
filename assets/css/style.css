@@ -455,3 +455,17 @@ footer {
         gap: 6px;
     }
 }
+/* Принудительный моноширинный шрифт для псевдографики */
+pre,
+code,
+.code pre code,
+.code pre {
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', 'Courier New', monospace !important;
+    font-weight: 400 !important;
+    -webkit-text-size-adjust: none !important;
+    text-size-adjust: none !important;
+    text-rendering: optimizeSpeed !important;
+    white-space: pre !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+}
