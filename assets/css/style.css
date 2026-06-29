@@ -244,6 +244,10 @@ main a {
     background: var(--summary-bg);
     color: var(--code-text);
     border: 1px solid var(--border-light);
+    -webkit-text-size-adjust: none !important; /* Для Safari и Chrome на iOS/Android */
+    -moz-text-size-adjust: none !important; /* Для Firefox */
+    -ms-text-size-adjust: none !important; /* Для старых Windows Phone */
+    text-size-adjust: none !important; /* Стандарт */
 }
 
 /* ══════════════════════════════════════════════
@@ -289,6 +293,10 @@ main a {
         background: transparent;
         border: none;
         padding: 0;
+        -webkit-text-size-adjust: none !important; /* Для Safari и Chrome на iOS/Android */
+        -moz-text-size-adjust: none !important; /* Для Firefox */
+        -ms-text-size-adjust: none !important; /* Для старых Windows Phone */
+        text-size-adjust: none !important; /* Стандарт */
     }
 
 /* ══════════════════════════════════════════════
