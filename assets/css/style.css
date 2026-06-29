@@ -375,6 +375,7 @@ footer {
    АДАПТИВНОСТЬ — планшет (max 768px)
    ══════════════════════════════════════════════ */
 @media (max-width: 768px) {
+
     main {
         padding: 12px;
     }
@@ -411,6 +412,15 @@ footer {
    АДАПТИВНОСТЬ — мобильный (max 480px)
    ══════════════════════════════════════════════ */
 @media (max-width: 480px) {
+
+    :not(pre) > code {
+        white-space: nowrap;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
     .site-title {
         font-size: 0.8rem;
         max-width: 140px;
